@@ -7,7 +7,6 @@ const CatImage = () => {
     fetch("https://api.thecatapi.com/v1/images/search")
       .then((response) => response.json())
       .then((data) => {
-        // Mengambil URL gambar kucing acak dari respons API
         if (data && data[0] && data[0].url) {
           setCatImage(data[0].url);
         }
