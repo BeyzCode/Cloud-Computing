@@ -1,3 +1,5 @@
+// CatImage.js
+
 import React, { useEffect, useState } from "react";
 
 const CatImage = () => {
@@ -16,7 +18,9 @@ const CatImage = () => {
   return (
     <div>
       <h2>Gambar Kucing Acak</h2>
-      {catImage && <img src={catImage} alt="Kucing Acak" />}
+      {catImage && (
+        <img src={catImage} alt="Kucing Acak" className="cat-image" />
+      )}
     </div>
   );
 };
